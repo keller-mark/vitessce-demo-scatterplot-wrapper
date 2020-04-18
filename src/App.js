@@ -1,11 +1,19 @@
 import React from 'react';
-//import { Scatterplot } from 'vitessce/es/production/scatterplot.min.js';
-//import 'vitessce/es/production/static/css/index.css';
+/**
+ * Import Vitessce components
+ * using either production or development
+ * bundles.
+ */
+import { Scatterplot } from 'vitessce/es/production/scatterplot.min.js';
+import { Status } from 'vitessce/es/production/status.min.js';
+//import { Scatterplot } from 'vitessce/es/development/scatterplot.js';
+//import { Status } from 'vitessce/es/development/status.js';
 
-import { Scatterplot } from 'vitessce/es/development/scatterplot.js';
-import { Status } from 'vitessce/es/development/status.js';
-
-import 'vitessce/es/development/static/css/index.css';
+/**
+ * Import Vitessce CSS.
+ */
+import 'vitessce/es/production/static/css/index.css';
+//import 'vitessce/es/development/static/css/index.css';
 
 console.log(Scatterplot);
 
