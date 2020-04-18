@@ -1,7 +1,11 @@
 import React from 'react';
-import { Scatterplot } from 'vitessce/es/scatterplot.js';
-import 'vitessce/es/static/css/index.css';
-import './App.css';
+//import { Scatterplot } from 'vitessce/es/production/scatterplot.min.js';
+//import 'vitessce/es/production/static/css/index.css';
+
+import { Scatterplot } from 'vitessce/es/development/scatterplot.js';
+import { Status } from 'vitessce/es/development/status.js';
+
+import 'vitessce/es/development/static/css/index.css';
 
 console.log(Scatterplot);
 
@@ -86,7 +90,10 @@ function App() {
 
   return (
     <div className="vitessce-container vitessce-theme-light">
-      <div className="card card-body bg-secondary" style={{ width: '50vh', height: '50vh', margin: '25vh auto' }}>
+      <div className="card card-body bg-secondary" style={{ width: '50vh', height: '15vh', margin: '5vh auto' }}>
+        <Status info="Welcome to this Vitessce component demo" removeGridComponent={() => {}}/>
+      </div>
+      <div className="card card-body bg-secondary" style={{ width: '50vh', height: '50vh', margin: '5vh auto' }}>
         <Scatterplot 
           uuid={uuid}
           view={view}
