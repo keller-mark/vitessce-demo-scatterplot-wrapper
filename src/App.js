@@ -91,7 +91,7 @@ function App() {
   const mapping = "PCA";
   const selectedCellIds = new Set();
   const updateCellsHover = (hoverInfo) => {};
-  const updateCellsSelection = (selectedIds) => {};
+  const updateCellsSelection = (selectedIds) => { console.log(selectedIds); };
   const updateStatus = (message) => {};
   const updateViewInfo = (viewInfo) => {};
   const clearPleaseWait = (layerName) => {};
